@@ -14,7 +14,7 @@ Website này hiện đang trong quá trình phát triển.
 ---
 
 ## 🛠 Công nghệ sử dụng
-- **Frontend:** HTML, CSS, JavaScript (hoặc React/Vue/Angular)
+- **Frontend:** HTML, CSS, JavaScript
 - **Backend:** Node.js / Express
 - **Cơ sở dữ liệu:** MySQL
 - **Triển khai:** AWS
