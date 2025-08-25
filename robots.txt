@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: http://miyan.vn/sitemap.xml
+Sitemap: https://miyan.vn/sitemap.xml
