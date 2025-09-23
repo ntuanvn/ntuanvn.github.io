@@ -1,38 +1,48 @@
 <!DOCTYPE html>
 <html lang="vi">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GNXH4B2N0M"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-GNXH4B2N0M');
-</script>
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GNXH4B2N0M"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-GNXH4B2N0M');
+    </script>
+
     <title>www.miyan.vn is coming soon</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="description" content="A little sweetness, just for you.">
     <meta name="keywords" content="miyan, miyan.vn, miyan.vn, miyan shop, miyan store, miyan official, miyan official store">
     <meta name="author" content="Miyan">
+    <meta name="theme-color" content="#fff">
 
     <meta property="og:locale" content="vi_VN">
     <meta property="og:title" content="www.miyan.vn is coming soon">
     <meta property="og:description" content="A little sweetness, just for you.">
-    <meta property="og:image" content="https://miyan.vn/images/coming.jpg">
-    <meta property="og:url" content="https://miyan.vn">
+    <meta property="og:image" content="https://www.miyan.vn/images/coming.jpg">
+    <meta property="og:url" content="https://www.miyan.vn">
     <meta property="og:type" content="website">
 
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
     <div class="container">
-        <img src="images/coming.jpg" alt="Under Construction">
+        <!-- Dùng class và lazy loading để tối ưu cho mobile -->
+        <img
+            class="hero"
+            src="images/coming.jpg"
+            alt="A little sweetness, just for you."
+            loading="lazy"
+            srcset="images/coming-480.jpg 480w, images/coming-800.jpg 800w, images/coming-1200.jpg 1200w"
+            sizes="(max-width: 480px) 90vw, (max-width: 1024px) 70vw, 800px"
+        >
     </div>
 </body>
 </html>
