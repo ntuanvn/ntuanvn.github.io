@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "sharp": "*"
+    "sharp": "0.34.4"
   }
 }
