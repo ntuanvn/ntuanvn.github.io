@@ -14,6 +14,7 @@ html, body {
 .container {
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: env(safe-area-inset-top) env(safe-area-inset-right) calc(env(safe-area-inset-bottom, 0px) + 96px) env(safe-area-inset-left);
@@ -26,11 +27,20 @@ img.hero {
     width: 100%;
     max-width: 900px; /* hạn chế kích thước desktop */
     height: auto;
-    margin: 0 16px;
+    margin: 0 16px 18px 16px;
     border-radius: 12px;
     box-shadow: 0 8px 30px rgba(0,0,0,0.12);
     object-fit: cover;
 }
+
+/* Map section */
+.map-section { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.map-title { font-size: 16px; color: #333; margin: 0 0 6px; }
+.map-wrapper { width: 100%; max-width: 900px; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.06); }
+.map-wrapper iframe { border: 0; width: 100%; height: 360px; display: block; }
+.map-link { font-size: 13px; color: #666; }
+.map-link a { color: #1877F2; text-decoration: none; }
+.map-link a:hover { text-decoration: underline; }
 
 /* Media queries nhỏ: giảm margin/border-radius, tăng tính chiếm dụng màn hình */
 @media (max-width: 480px) {
@@ -39,6 +49,7 @@ img.hero {
         border-radius: 8px;
         max-width: calc(100% - 16px);
     }
+    .map-wrapper iframe { height: 240px; }
 }
 
 /* Thêm hỗ trợ màn hình nhỏ và landscape nhỏ */
@@ -82,6 +93,7 @@ img.hero {
     padding: 6px 10px;
     transition: opacity .15s ease, transform .08s ease;
 }
+.site-footer .social.maps { color: #EA4335; }
 .site-footer .social:hover {
     opacity: 0.9;
     transform: translateY(-1px);
